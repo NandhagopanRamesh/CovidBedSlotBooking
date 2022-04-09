@@ -1,1 +1,30 @@
+-- Dumping data for table `bookingpatient`--
 
+INSERT INTO `bookingpatient` (`id`, `srfid`, `bedtype`, `hcode`, `spo2`, `pname`, `pphone`, `paddress`) VALUES
+(3, '1BY19IS169', 'ICUBed', '18JAN22', 85, 'TEJU', '9986786453', 'BANGALORE'),
+(4, '1BY19IS168', 'ICUBed', '18ISE22', 92, 'TARUN', '8088131784', 'banaglore ');
+
+-- --------------------------------------------------------
+
+-- Dumping data for table `hospitaldata`--
+
+INSERT INTO `hospitaldata` (`id`, `hcode`, `hname`, `normalbed`, `hicubed`, `icubed`, `vbed`) VALUES
+(3, '18JAN22', 'BMSIT Hospital', 40, 4, 4, 1);
+
+-- Dumping data for table `test`--
+
+INSERT INTO `test` (`id`, `name`) VALUES
+(1, 'Teju'),
+(2, 'Tarun');
+
+-- Dumping data for table `trig`--
+
+INSERT INTO `trig` (`id`, `hcode`, `normalbed`, `hicubed`, `icubed`, `vbed`, `querys`) VALUES
+(1, '18JAN22', 50, 9, 2, 1, ' UPDATED'),
+(2, '18ISE22', 50, 9, 2, 1, ' DELETED');
+
+-- Dumping data for table `user`--
+
+INSERT INTO `user` (`id`, `srfid`, `email`, `dob`) VALUES
+(9, '1BY19IS168', '1by19is169@bmsit.in', 'bmsit123'),
+(10, '1BY19IS169', '168and169@gmail.com', 'bmsit123');
