@@ -1,1 +1,54 @@
+-- Table structure for table `bookingpatient`--
 
+CREATE TABLE `bookingpatient` (
+  `id` int(11) NOT NULL,
+  `srfid` varchar(50) NOT NULL,
+  `bedtype` varchar(50) NOT NULL,
+  `hcode` varchar(50) NOT NULL,
+  `spo2` int(11) NOT NULL,
+  `pname` varchar(50) NOT NULL,
+  `pphone` varchar(12) NOT NULL,
+  `paddress` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- Table structure for table `hospitaldata`--
+
+CREATE TABLE `hospitaldata` (
+  `id` int(11) NOT NULL,
+  `hcode` varchar(200) NOT NULL,
+  `hname` varchar(200) NOT NULL,
+  `normalbed` int(11) NOT NULL,
+  `hicubed` int(11) NOT NULL,
+  `icubed` int(11) NOT NULL,
+  `vbed` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Table structure for table `hospitaluser`--
+
+CREATE TABLE `test` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Table structure for table `trig`--
+
+CREATE TABLE `trig` (
+  `id` int(11) NOT NULL,
+  `hcode` varchar(50) NOT NULL,
+  `normalbed` int(11) NOT NULL,
+  `hicubed` int(11) NOT NULL,
+  `icubed` int(11) NOT NULL,
+  `vbed` int(11) NOT NULL,
+  `querys` varchar(50) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Table structure for table `user`--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `srfid` varchar(20) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `dob` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
