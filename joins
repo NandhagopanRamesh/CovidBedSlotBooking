@@ -1,2 +1,10 @@
 SELECT hospitaldata.id, bookingpatient.srfid, bookingpatient.pname FROM bookingpatient
   INNER JOIN hospitaldata ON hospitaldata.id = bookingpatient.id;
+SELECT user.id, bookingpatient.srfid, bookingpatient.pname FROM bookingpatient
+    INNER JOIN user ON user.id = bookingpatient.id;
+SELECT test.id, bookingpatient.srfid, bookingpatient.pname FROM bookingpatient   
+    INNER JOIN test ON test.id = bookingpatient.id;
+SELECT hospitaldata.id,hospitaluser.name FROM hospitaluser
+    INNER JOIN hospitaldata ON hospitaldata.id = hospitaluser.id;
+SELECT trigs.id, bookingpatient.srfid, bookingpatient.pname FROM bookingpatient    
+   INNER JOIN trigs ON trigs.id = bookingpatient.id;
