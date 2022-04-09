@@ -52,3 +52,81 @@ CREATE TABLE `user` (
   `email` varchar(100) NOT NULL,
   `dob` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- Indexes for table `bookingpatient`
+--
+ALTER TABLE `bookingpatient`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `srfid` (`srfid`(20));
+
+--
+-- Indexes for table `hospitaldata`
+--
+ALTER TABLE `hospitaldata`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `hcode` (`hcode`);
+
+--
+-- Indexes for table `hospitaluser`
+--
+ALTER TABLE `hospitaluser`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `test`
+--
+ALTER TABLE `test`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `trig`
+--
+ALTER TABLE `trig`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `srfid` (`srfid`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `bookingpatient`
+--
+ALTER TABLE `bookingpatient`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `hospitaldata`
+--
+ALTER TABLE `hospitaldata`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `hospitaluser`
+--
+ALTER TABLE `hospitaluser`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `test`
+--
+ALTER TABLE `test`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `trig`
+--
+ALTER TABLE `trig`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+COMMIT;
