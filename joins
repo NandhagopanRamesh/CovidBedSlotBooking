@@ -1,1 +1,2 @@
-
+SELECT hospitaldata.id, bookingpatient.srfid, bookingpatient.pname FROM bookingpatient
+  INNER JOIN hospitaldata ON hospitaldata.id = bookingpatient.id;
